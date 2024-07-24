@@ -15,7 +15,7 @@ const App = () => {
         <header>
           <Navbar />
         </header>
-        <main className="content mt-5">
+        <main className="content pt-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

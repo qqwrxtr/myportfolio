@@ -9,7 +9,7 @@ const Home = () => {
     return ( 
         <div className="container home d-flex flex-column align-items-center justify-content-center">
             <div className="row d-flex align-items-center justify-content-between w-100">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 kek">
                     <div className="title">
                         <p className="title">
                             {t("Home_title")}

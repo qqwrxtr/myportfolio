@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import LanguageSelector from '../LangChanger/Langchanger';
 import { useTranslation } from 'react-i18next';
 import i18n from './../../i18n/index.jsx';
+import teodor_logo from "./../../assets/img/Teodor_Logo.png"
 import './navbar.css';
 
 const Navbar = () => {
@@ -27,7 +28,9 @@ const Navbar = () => {
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
               <div className="firstpart">
-                <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>Logo</Link>
+                <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>
+                <img src={teodor_logo} alt='Logo' className='img-fluid'/>
+                </Link>
                 <div className="butt_lang">
                   <button
                     className="navbar-toggler"

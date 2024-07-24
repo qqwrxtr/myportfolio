@@ -22,18 +22,31 @@
     max-width: 373px;
     width: 100%;
     height: auto;
-    margin-bottom: -150px;
+    margin-bottom: -240px;
     position: relative;
 }
 
 @media only screen and (max-width:990px){
+    .kek{
+        margin-bottom: -150px;
+    }
+    .title{
+        font-size: 3rem;
+        max-width: 100%;
+    }
+    .under_title{
+        max-width: 100%;
+    }
     .photo{
-        justify-content: center;
+        margin-top: 50px;
     }
     .photo img{
-        max-width: 272;
+        max-width: 272px;
         width: 100%;
-        height: auto;
+        height: 450px;
         margin-bottom: -150px;
+        object-fit: contain;
+        z-index: 1;
+        
     }
 }
