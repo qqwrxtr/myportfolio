@@ -9,6 +9,16 @@ const AboutMe = () => {
                     <h1>About Me</h1>
                 </div>
             </div>
+            <div className="row abt_me">
+                <div className="col-1">
+                    <div className="vr h-100"></div>
+                </div>
+                <div className="row">
+                    <div className="col-11 text">
+                        <p>Enginering</p>
+                    </div>
+                </div>
+            </div>
         </div>
      );
 }

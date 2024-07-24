@@ -1,10 +1,29 @@
+::-webkit-scrollbar-track{
+	background-color: var(--navfooter);
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: var(--bgcolorbody);
+  
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: var(--scrollbar);	
+  border-radius:50px ;
+  -webkit-border-radius:50px ;
+  -moz-border-radius:50px ;
+  -ms-border-radius:50px ;
+  -o-border-radius:50px ;
+}
+
 :root {
   --bgcolorbody: #11071F;
   --navfooter: #1A0B2E;
+  --scrollbar: #55377c;
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -41,6 +60,7 @@ header {
 .content {
   flex-grow: 1;
   overflow: hidden;
+  padding-top: 30px;
 }
 
 footer {

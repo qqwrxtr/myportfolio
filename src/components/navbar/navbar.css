@@ -19,6 +19,10 @@
     border-bottom: 3px solid white;
 }
 
+.form-select{
+    width: 120px;
+}
+
 .form-select.mobile {
     display: none;
 }
@@ -64,7 +68,7 @@
     }
     .form-select.mobile{
         display: flex !important;
-        width: 110px;
+        width: 120px;
     }
     .form-select{
         display: none !important;
@@ -72,5 +76,11 @@
     .butt_lang{
         display: flex;
         column-gap: 15px;
+        flex-direction: row-reverse;
+    }
+    .navbar-brand img{
+        max-width: 200px;
+        width: 100%;
+        margin-top: 0px;
     }
 }

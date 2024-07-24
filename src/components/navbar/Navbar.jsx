@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LanguageSelector from '../LangChanger/Langchanger';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,10 @@ const Navbar = () => {
   const location = useLocation();
   const [activePage, setActivePage] = useState(location.pathname);
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+
+  useEffect(() => {
+    setActivePage(location.pathname);
+  }, [location.pathname]);
 
   const handleNavClick = (page) => {
     setActivePage(page);
