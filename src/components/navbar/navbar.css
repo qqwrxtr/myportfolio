@@ -1,8 +1,40 @@
-.navbar{
-    background-color: #11071F;
+.bg-all{
+    background-color: var(--navfooter);
+}
+
+.navbar-nav{
+    column-gap: 30px;
 }
 
 .navbar a {
     color: white !important;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.navbar .nav-link.active {
+    border-bottom: 3px solid white;
+}
+
+.form-select.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width:990px) {
+    .firstpart{
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-select.mobile{
+        display: flex !important;
+        max-width: 120px;
+    }
+    .form-select{
+        display: none !important;
+    }
+    .butt_lang{
+        display: flex;
+        column-gap: 15px;
+    }
 }

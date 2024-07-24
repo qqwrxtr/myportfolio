@@ -2,5 +2,6 @@
     "Nav_Home" : "Home",
     "Nav_Abtme" : "About Me",
     "Nav_proj" : "Projects",
-    "Nav_contact" : "Contact"
+    "Nav_contact" : "Contact",
+    "Home_title" : "Home Page"
 }

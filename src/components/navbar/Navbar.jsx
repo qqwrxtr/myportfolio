@@ -14,24 +14,30 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container pt-2 bg-all">
       <div className="row">
         <div className="col-12">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
               <div className="firstpart">
                 <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>Logo</Link>
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
+                <div className="butt_lang">
+                    <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style={{
+                        backgroundColor:"white"
+                    }}
+                    >
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <LanguageSelector className="mobile"/>
+                </div>
               </div>
               <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav d-flex align-items-center">
