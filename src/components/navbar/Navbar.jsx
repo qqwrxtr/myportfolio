@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LanguageSelector from '../LangChanger/Langchanger';
 import { useTranslation } from 'react-i18next';
+import i18n from './../../i18n/index.jsx';
 import './navbar.css';
 
 const Navbar = () => {
   const { t } = useTranslation();
   const location = useLocation();
   const [activePage, setActivePage] = useState(location.pathname);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const handleNavClick = (page) => {
     setActivePage(page);
+  };
+
+  const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language);
+    setSelectedLanguage(language);
   };
 
   return (
@@ -22,7 +29,7 @@ const Navbar = () => {
               <div className="firstpart">
                 <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>Logo</Link>
                 <div className="butt_lang">
-                    <button
+                  <button
                     className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
@@ -33,10 +40,10 @@ const Navbar = () => {
                     style={{
                         backgroundColor:"white"
                     }}
-                    >
+                  >
                     <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <LanguageSelector className="mobile"/>
+                  </button>
+                  <LanguageSelector className="mobile" selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
                 </div>
               </div>
               <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -78,7 +85,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <LanguageSelector />
+                    <LanguageSelector selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
                   </li>
                 </ul>
               </div>

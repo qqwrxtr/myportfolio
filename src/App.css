@@ -12,17 +12,13 @@
   color: white !important;
   text-align: center;
   font-family: "Preahvihear", sans-serif;
-}
-
-html, body, #root, .app {
-  height: 100%;
   margin: 0;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 header {
@@ -37,5 +33,4 @@ header {
 footer {
   flex-shrink: 0;
   background-color: var(--navfooter);
-  padding: 1rem 0;
 }

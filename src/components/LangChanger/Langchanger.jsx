@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import i18n from './../../i18n/index.jsx';
+import React from "react";
 import "../navbar/navbar.css";
 
-const LanguageSelector = ({ className }) => {
-    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-
+const LanguageSelector = ({ className, selectedLanguage, onChangeLanguage }) => {
     const chooseLanguage = (e) => {
         e.preventDefault();
-        i18n.changeLanguage(e.target.value);   
-        setSelectedLanguage(e.target.value);
+        onChangeLanguage(e.target.value);
     }
 
     return (
         <select
-            defaultValue={selectedLanguage}
+            value={selectedLanguage}
             onChange={chooseLanguage}
             className={`form-select ${className}`}
             style={{ display: className === 'mobile' ? 'none' : 'block' }}
