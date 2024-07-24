@@ -16,7 +16,6 @@ html, body {
   width: 100%;
   height: 100%;
   color: white !important;
-  text-align: center;
   font-family: "Preahvihear", sans-serif;
   margin: 0;
   display: flex;
@@ -27,6 +26,10 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-image: url("./assets/img/Gradient.png"),
+                    url("./assets/img/Gradient.png");
+  background-repeat: no-repeat;
+  background-position: -200px 430px ,1500px -150px;
 }
 
 header {

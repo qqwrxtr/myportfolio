@@ -2,6 +2,10 @@
     background-color: var(--navfooter);
 }
 
+.navbar{
+    padding: 20px 0;
+}
+
 .navbar-nav{
     column-gap: 30px;
 }

@@ -1,0 +1,39 @@
+.home{
+    height: 80%;
+}
+
+.title{
+    font-size: 3.2rem;
+    max-width: 390px;
+    line-height: 3.5rem;
+}
+
+.under_title{
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+.photo{
+    display: flex;
+    justify-content: end;
+}
+
+.photo img{
+    max-width: 373px;
+    width: 100%;
+    height: auto;
+    margin-bottom: -150px;
+    position: relative;
+}
+
+@media only screen and (max-width:990px){
+    .photo{
+        justify-content: center;
+    }
+    .photo img{
+        max-width: 272;
+        width: 100%;
+        height: auto;
+        margin-bottom: -150px;
+    }
+}

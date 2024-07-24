@@ -3,5 +3,10 @@
     "Nav_Abtme" : "About Me",
     "Nav_proj" : "Projects",
     "Nav_contact" : "Contact",
-    "Home_title" : "Home Page"
+    "Home_title" : "Hello, i am Teodor Ghirba",
+    "Home_undertitle" : "I am a FullStack Web Developer, i finished the Center Of Excellence in Informatics and Information Technlogies. Currently a student at Technical University Of Moldova, and also working as a Web Developer at VenMedia SRL ",
+    "Contact_Me" : "Contact Me",
+
+
+    "Footer_rights" : "© 2024 Teodor. All Rights Reserved."
 }
