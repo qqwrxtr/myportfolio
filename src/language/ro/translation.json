@@ -6,7 +6,15 @@
     "Home_title" : "Salut, sunt Teodor Ghirba",
     "Home_undertitle" : "Sunt dezvoltator Web FullStack, am terminat Centrul De Excelență în Informatică și Tehnologii Informaționale, sunt student la Universitatea Tehnica din Moldova și activez ca Web Developer la VenMedia SRL ",
     "Contact_Me" : "Contactează-Mă",
-    
+    "About_title" : "Despre Mine",
+    "About_first_step" : "2019, Primii Pași",
+    "About_first_step_desc" : "Mi-am început călătoria ca dezvoltator Web prin anul 2019, vizionând youtube pentru a invăța html și css, mi-a plăcut, am fost fascinat de web development și am vrut să aflu mai multe despre el.",
+    "About_second_step" : "2020, Colegiul",
+    "About_second_step_desc" : "În 2020 m-am alăturat Centrului de Excelență în informatică și Tehnologii Informaționale, alegând specialitatea Administrare aplicații Web, mi-a plăcut, timp de 4 ani învățam elementele de bază ale dezvoltării Web, FrontEnd-ul Html/Css/JavaScript și BackEnd-ul PHP / MySQL, și multe alte lucruri care mă ajută în prezent",
+    "About_third_step" : "2021, Primile Proiecte",
+    "About_third_step_desc": "În 2021, am început primele mele proiecte folosind HTML și CSS de bază. M-am concentrat pe învățarea modului corect de a utiliza elemente precum <p> , <img> , <div> , <video>. A fost o călătorie interesantă și am reușit să stăpânesc structura corectă a HTML-ului pentru un site web.",
+    "About_third_step_button" : "Primul Proiect",
+
 
     "Footer_rights" : "© 2024 Teodor. Toate drepturile sunt rezervate."
 }

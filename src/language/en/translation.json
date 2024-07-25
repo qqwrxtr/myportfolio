@@ -6,6 +6,15 @@
     "Home_title" : "Hello, i am Teodor Ghirba",
     "Home_undertitle" : "I am a FullStack Web Developer, i finished the Center Of Excellence in Informatics and Information Technlogies. Currently a student at Technical University Of Moldova, and also working as a Web Developer at VenMedia SRL ",
     "Contact_Me" : "Contact Me",
+    "About_title" : "About Me",
+    "About_first_step" : "2019, First Steps",
+    "About_first_step_desc" : "I started my journey as a Web Developer early in 2019, watching YouTube to learn HTML and CSS, and I loved it. I was fascinated by the web, and I wanted to learn more about it and its endless possibilities.",
+    "About_second_step" : "2020, College",
+    "About_second_step_desc" : "In 2020 i joined the Center of Excellence in Informatics and Information Technologies,choosing the specialty Web Application Administration, i loved it, for 4 years i was learning the basics of Web Development, the FrontEnd Html/Css/JavaScript, and the BackEnd PHP/MySQL, and many other things that are helping me in present",
+    "About_third_step" : "2021, First Projects ",
+    "About_third_step_desc": "In 2021, I began my first projects using basic HTML and CSS. I focused on learning the correct way to use elements such as <p> , <img> , <div> , <video>. It was an interesting journey, and I succeeded in mastering the correct HTML structure for a website.",
+    "About_third_step_button" : "See First Project",
+
 
 
     "Footer_rights" : "© 2024 Teodor. All Rights Reserved."
