@@ -7,7 +7,7 @@ const ContactMeButton = () => {
     const { t } = useTranslation();
     return ( 
         <div className="button mt-5">
-            <Link to="/contact" className="btn btn-gradient">{t("Contact_Me")}</Link>
+            <Link to="/contact" className="btn btn-gradient text-center">{t("Contact_Me")}</Link>
         </div>
      );
 }

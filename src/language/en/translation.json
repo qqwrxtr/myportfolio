@@ -12,8 +12,11 @@
     "About_second_step" : "2020, College",
     "About_second_step_desc" : "In 2020 i joined the Center of Excellence in Informatics and Information Technologies,choosing the specialty Web Application Administration, i loved it, for 4 years i was learning the basics of Web Development, the FrontEnd Html/Css/JavaScript, and the BackEnd PHP/MySQL, and many other things that are helping me in present",
     "About_third_step" : "2021, First Projects ",
-    "About_third_step_desc": "In 2021, I began my first projects using basic HTML and CSS. I focused on learning the correct way to use elements such as <p> , <img> , <div> , <video>. It was an interesting journey, and I succeeded in mastering the correct HTML structure for a website.",
-    "About_third_step_button" : "See First Project",
+    "About_third_step_desc": "In 2021, I began my first projects using basic HTML and CSS. I focused on learning the correct way to use elements such as <p> , <img> , <div> , <form> , <input> , <button> , <table>. It was an interesting journey, and I succeeded in mastering the correct HTML structure for a website.",
+    "About_third_step_button" : "First Project",
+    "About_fourth_step" : "2023: A Year of Professional Growth",
+    "About_fourth_step_desc" : "Over the past two years, I have honed my skills in web development, creating a variety of engaging applications. In 2023, I successfully developed a full-stack online magazine using HTML, CSS, JavaScript, PHP, and MySQL. Additionally, I embarked on learning React.js, a powerful JavaScript library for building user interfaces. (Fun Fact: This portfolio is built with React.js!)",
+    "About_fourth_step_button": "FullStack App",
 
 
 

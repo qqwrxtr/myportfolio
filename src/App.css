@@ -35,7 +35,8 @@ html, body {
   width: 100%;
   height: 100%;
   color: white !important;
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Shantell Sans", sans-serif;
+  font-weight: 500;
   margin: 0;
   display: flex;
   flex-direction: column;

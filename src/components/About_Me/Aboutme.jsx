@@ -1,9 +1,7 @@
 import React, { useTransition } from "react";
 import "./aboutme.css"
 import { useTranslation } from 'react-i18next';
-import githubicon from "./../../assets/img/cat_white.png"
-
-const githubProject = "https://github.com/qqwrxtr/ReteteDeHavcic";
+import Button from "../buttontogit/ButtonToProjects";
 
 
 const AboutMe = () => {
@@ -42,20 +40,26 @@ const AboutMe = () => {
                     </div>
                     <div className="row mtipa2">
                         <div className="title_ocupation">
-                        <div className="dot step3"></div>
-                            <p>{t("About_third_step")}</p>    
+                            <div className="dot step3"></div>
+                                <p>{t("About_third_step")}</p>    
+                            </div>  
+                            <div className="undertitle_ocupation">
+                                <p>{t("About_third_step_desc")}</p>    
+                            </div>
+                            <div className="seemore">      
+                                <Button src="https://github.com/qqwrxtr/ReteteDeHavcic" txt={t("About_third_step_button")}/>
+                            </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="title_ocupation">
+                        <div className="dot step4"></div>
+                            <p>{t("About_fourth_step")}</p>    
                         </div>  
                         <div className="undertitle_ocupation">
-                            <p>{t("About_third_step_desc")}</p>    
+                            <p>{t("About_fourth_step_desc")}</p>    
                         </div>
-                        <div className="seemore">
-                            <a href={githubProject} target="_blank" >
-                                <div className="btn">
-                                    <button id="button-3">
-                                        
-                                    </button>
-                                </div>
-                            </a>
+                        <div className="seemore">      
+                            <Button src="https://github.com/qqwrxtr/Practica" txt={t("About_fourth_step_button")}/>
                         </div>
                     </div>
                 </div>    

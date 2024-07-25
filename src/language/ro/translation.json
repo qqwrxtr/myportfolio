@@ -12,8 +12,12 @@
     "About_second_step" : "2020, Colegiul",
     "About_second_step_desc" : "În 2020 m-am alăturat Centrului de Excelență în informatică și Tehnologii Informaționale, alegând specialitatea Administrare aplicații Web, mi-a plăcut, timp de 4 ani învățam elementele de bază ale dezvoltării Web, FrontEnd-ul Html/Css/JavaScript și BackEnd-ul PHP / MySQL, și multe alte lucruri care mă ajută în prezent",
     "About_third_step" : "2021, Primile Proiecte",
-    "About_third_step_desc": "În 2021, am început primele mele proiecte folosind HTML și CSS de bază. M-am concentrat pe învățarea modului corect de a utiliza elemente precum <p> , <img> , <div> , <video>. A fost o călătorie interesantă și am reușit să stăpânesc structura corectă a HTML-ului pentru un site web.",
+    "About_third_step_desc": "În 2021, am început primele mele proiecte folosind HTML și CSS de bază. M-am concentrat pe învățarea modului corect de a utiliza elemente precum <p> , <img> , <div> , <form> , <input> , <button> , <table>. A fost o călătorie interesantă și am reușit să stăpânesc structura corectă a HTML-ului pentru un site web.",
     "About_third_step_button" : "Primul Proiect",
+    "About_fourth_step": "2023: Un An de Creștere Profesională",
+    "About_fourth_step_desc": "În ultimii doi ani, mi-am perfecționat abilitățile în dezvoltarea web, creând o varietate de aplicații captivante. În 2023, am dezvoltat cu succes un magazin online full-stack folosind HTML, CSS, JavaScript, PHP și MySQL. În plus, am început să învăț React.js, o bibliotecă JavaScript puternică pentru construirea interfețelor utilizator. (Fapt amuzant: acest portofoliu este construit cu React.js!)",
+    "About_fourth_step_button": "Aplicație Full-Stack",
+
 
 
     "Footer_rights" : "© 2024 Teodor. Toate drepturile sunt rezervate."
