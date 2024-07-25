@@ -26,10 +26,29 @@
     -o-transform: translateY(100px);
 }
 
+.da{
+    column-gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cv .btn{
+    max-width: 200px !important;
+}
+
+@media only screen and (max-width:1199px){
+    .cv{
+        margin-top: -25px;
+    }
+}
+
 @media only screen and (max-width:990px){
     .kek{
         margin-top: 50px;
         margin-bottom: -250px;
+    }
+    .da{
+        display: flex;
+        flex-direction: column;
     }
     .title{
         font-size: 3rem;

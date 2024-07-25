@@ -1,7 +1,7 @@
 import React, { useTransition } from "react";
 import "./aboutme.css"
 import { useTranslation } from 'react-i18next';
-import Button from "../buttontogit/ButtonToProjects";
+import Button from "../buttons/buttontogit/ButtonToProjects";
 
 
 const AboutMe = () => {

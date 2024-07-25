@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css"
 import { useTranslation } from 'react-i18next';
 import ContactMeButton from "../buttons/contactme/ContactMe";
+import CV from "./../buttons/Cv/Cv.jsx";
 import me from "./../../assets/img/image.png"
 
 const Home = () => {
@@ -20,8 +21,13 @@ const Home = () => {
                             {t("Home_undertitle")}&#128513;
                         </p>
                     </div>
-                    <div className="contact_me">
-                        <ContactMeButton/>
+                    <div className="flex d-flex da">
+                        <div className="contact_me">
+                            <ContactMeButton/>
+                        </div>
+                        <div className="cv">
+                            <CV />
+                        </div>
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 photo">

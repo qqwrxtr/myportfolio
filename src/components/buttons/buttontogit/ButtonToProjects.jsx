@@ -1,5 +1,5 @@
 import "./buttn.css";
-import githubicon from "./../../assets/img/cat_white.png"
+import githubicon from "./../../../assets/img/cat_white.png"
 
 
 
