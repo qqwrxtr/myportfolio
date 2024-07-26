@@ -20,7 +20,7 @@
 
 .dot{
     height: 17px;
-    width: 17px;
+    width: 17px !important;
     border-radius: 50%;
     border: 1px solid white;
     background-color: var(--bgcolorbody);
@@ -32,6 +32,7 @@
     display: flex;
     column-gap: 18px;
     margin-left: -35px;
+    min-height: 50px;
 }
 
 .undertitle_ocupation{
