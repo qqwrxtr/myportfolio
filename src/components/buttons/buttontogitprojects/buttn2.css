@@ -7,12 +7,12 @@ a{
 }
 
 
-#button-3 img{
+#button-4 img{
     width: 20px;
     height: auto;
 }
 
-#button-3 {
+#button-4 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -25,7 +25,7 @@ a{
     -o-border-radius: 12px;
 }
   
-  #button-3 a {
+  #button-4 a {
     position: relative;
     transition: all .45s ease-Out;
   }
@@ -43,35 +43,39 @@ a{
     left: 70px;
   }
   
-  #button-3:hover #circle {
+  #button-4:hover #circle {
     width: 200%;
     height: 500%;
     opacity: 1;
     top: -70px;
     left: -70px;
   }
+
+  #button-4{
+    width: 170px;
+  }
   
-  #button-3:hover a {
+  #button-4:hover a {
     color: #2D3142;
   }
   
   @media only screen and (max-width:768px) {
-  #button-3{
+  #button-4{
     font-size: 0.9rem;
   }
   }
   @media only screen and (max-width:490px) {
-    #button-3{
+    #button-4{
       font-size: 0.8rem;
     }
   }
   @media only screen and (max-width:380px) {
-    #button-3{
+    #button-4{
       font-size: 0.7rem;
     }
   }
   @media only screen and (max-width:330px) {
-    #button-3{
+    #button-4{
       font-size: 0.6rem;
     }
   }

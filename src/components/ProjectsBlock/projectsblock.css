@@ -1,0 +1,32 @@
+.gradient{
+    background: linear-gradient(130deg, #130428 7%, #25104d 34%, #381e6d 57%, #261045 85%, #190834 100%);
+    background-size: 200% 200%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #4F228D;
+    font-size: 1.3rem;
+    transition: border 0.3s;
+    width: 450px;
+    text-align: center;
+}
+
+.jopa{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.description{
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+.no-padding{
+    margin-bottom: 0 !important;
+}

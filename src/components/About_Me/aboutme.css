@@ -55,15 +55,6 @@
     color: white;
 }
 
-.seemore a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
-
-
 @media only screen and (max-width:768px) {
     .title_ocupation{
         font-size: 1.6rem;
