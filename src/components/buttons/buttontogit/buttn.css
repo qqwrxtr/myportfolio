@@ -49,16 +49,21 @@
   
   @media only screen and (max-width:768px) {
   #button-3{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   }
-  @media only screen and (max-width:550px) {
+  @media only screen and (max-width:490px) {
+    #button-3{
+      font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width:380px) {
     #button-3{
       font-size: 0.7rem;
     }
-
-    #button-3 img{
-      width: 10px;
-      height: auto;
+  }
+  @media only screen and (max-width:330px) {
+    #button-3{
+      font-size: 0.6rem;
     }
   }

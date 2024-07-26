@@ -21,7 +21,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="col-11">
-                    <div className="row">
+                    <div className="row top_margin">
                         <div className="title_ocupation">
                         <div className="dot step1"></div>
                             <p>{t("About_first_step")}</p>    
