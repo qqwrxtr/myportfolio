@@ -75,7 +75,17 @@ const AboutMe = () => {
                             <ToProjects src="/projects" txt={t("About_fifth_step_button")}/>
                         </div>
                     </div>
-                    
+                    <div className="row mt-5">
+                        <div className="col-12">  
+                            <div className="title_ocupation">
+                            <div className="dot step6"></div>
+                                <p>{t("About_conclusion")}</p>
+                            </div>
+                            <div className="undertitle_ocupation">
+                                <p>{t("About_conclusion_desc")}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>    
             </div>
         </div>

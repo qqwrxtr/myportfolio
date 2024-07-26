@@ -21,7 +21,8 @@
     "About_fifth_step" : "2024, Present",
     "About_fifth_step_desc": "In 2024, my journey in web development soared to new heights as I continued mastering the art of crafting sleek and innovative applications with React JS. Every day brings a fresh opportunity to explore the latest libraries like animejs, alertifyjs, swiperjs, and beyond. My passion and dedication shine through in every line of code, and you can witness the fruits of my labor on the Projects page.",
     "About_fifth_step_button": "My Projects",
-
+    "About_conclusion" : "My Journey to Becoming a Web Developer",
+    "About_conclusion_desc" : "Starting in 2019 with HTML and CSS tutorials on YouTube, my passion for web development has only grown. The Center of Excellence in Informatics and Information Technologies gave me a solid foundation in both FrontEnd and BackEnd development. By 2023, I had created a full-stack online magazine and learned React.js, which transformed my approach to building user interfaces. Now, as a student at the Technical University of Moldova and a Web Developer at VenMedia SRL, I continue to explore new libraries and improve my skills. Today, I am better than ever, and the future holds even greater promise.",
 
 
     "Footer_rights" : "© 2024 Teodor. All Rights Reserved."

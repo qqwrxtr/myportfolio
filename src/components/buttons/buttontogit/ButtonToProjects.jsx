@@ -11,7 +11,7 @@ const Button = (href) => {
             <div id="circle">
             </div>
             <div>
-                <a href={href.src} target="_blank" >{href.txt} <img src={githubicon} alt="" /> </a>
+                <a href={href.src} target="_blank" rel="noreferrer">{href.txt} <img src={githubicon} alt="" /> </a>
             </div>
         </div>
         
