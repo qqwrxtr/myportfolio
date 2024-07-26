@@ -4,6 +4,12 @@ import img1 from "./../../assets/img/neonsmile.png"
 import img2 from "./../../assets/img/bombblast.png"
 import img3 from "./../../assets/img/chesthunt.png"
 
+
+
+import neonsmilemp4 from "./../../assets/gifs/neonsmile.mp4"
+import bombblastmp4 from "./../../assets/gifs/bombblast.mp4"
+import chesthuntmp4 from "./../../assets/gifs/chesthunt.mp4"
+
 import "./Projects.css";
 
 
@@ -19,7 +25,8 @@ const Projects = () => {
                         name="Neon Smile" 
                         desc={t("Desc_NeonSmile")} 
                         srcsite="https://neon-smile-en.vercel.app/"
-                        img={img1}/>
+                        img={img1}
+                        gif={neonsmilemp4}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 
@@ -27,7 +34,8 @@ const Projects = () => {
                         name="Bomb Blast" 
                         desc={t("Desc_BombBlast")} 
                         srcsite="https://bomb-blast-en.vercel.app/"
-                        img={img2}/>
+                        img={img2}
+                        gif={bombblastmp4}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 
@@ -35,7 +43,8 @@ const Projects = () => {
                         name="Chest Hunt" 
                         desc={t("Desc_ChestHunt")} 
                         srcsite="https://chest-hunt.vercel.app/"
-                        img={img3}/>
+                        img={img3}
+                        gif={chesthuntmp4}/>
                 </div>
             </div>
         </div>

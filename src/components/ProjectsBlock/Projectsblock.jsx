@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Button2 from "../buttons/buttontogitprojects/ButtonToGit2";
 import ButtonToSite from "../buttons/buttontosite/ButtonToSlte";
 import { useTranslation } from "react-i18next";
+import PhotoOverflow from "./../PhotoGalery/PhotoOverflow";
 import "./projectsblock.css"
 
 const ProjectsBlock = (props) => {
     const { t } = useTranslation();
+    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+    const [currentImgSrc, setCurrentImgSrc] = useState("");
+
+    const handleImgClick = (imgSrc) => {
+        setCurrentImgSrc(imgSrc);
+        setIsOverlayVisible(true);
+    };
+
+    const handleCloseOverlay = () => {
+        setIsOverlayVisible(false);
+        setCurrentImgSrc("");
+    };
 
     return (
         <div className="projectsblock">
             <div className="projects gradient">
                 <div className="project">
                     <div className="row pt-3">
-                        <div className="col-12 img-container">
+                        <div className="col-12 img-container" onClick={() => handleImgClick(props.gif)}>
                             <img src={props.img} alt="" className="img-fluid jopa" />
                             <div className="preview-text">{t("Preview")}</div>
                         </div>
@@ -37,6 +50,7 @@ const ProjectsBlock = (props) => {
                     </div>
                 </div>
             </div>
+            {isOverlayVisible && <PhotoOverflow src={currentImgSrc} onClose={handleCloseOverlay} />}
         </div>
     );
 }

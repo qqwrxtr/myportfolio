@@ -1,13 +1,15 @@
-import "./photooverflow.css"
+import React from "react";
+import "./photooverflow.css";
 
-const PhotoOverflow = (propsss) => {
-    return ( 
+const PhotoOverflow = ({ src, onClose }) => {
+    return (
         <div className="overflow">
             <div className="overflow-inner">
-                <img src={propsss.src} alt="" className="img-fluid" />
+                <button className="close-button" onClick={onClose}>X</button>
+                <video src={src} className="video-fluid scale" autoPlay loop muted />
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default PhotoOverflow;
