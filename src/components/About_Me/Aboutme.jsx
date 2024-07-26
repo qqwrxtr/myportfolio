@@ -2,6 +2,7 @@ import React, { useTransition } from "react";
 import "./aboutme.css"
 import { useTranslation } from 'react-i18next';
 import Button from "../buttons/buttontogit/ButtonToProjects";
+import ToProjects from "../buttons/toprojects/Toprojects";
 
 
 const AboutMe = () => {
@@ -47,7 +48,7 @@ const AboutMe = () => {
                                 <p>{t("About_third_step_desc")}</p>    
                             </div>
                             <div className="seemore">      
-                                <Button src="https://github.com/qqwrxtr/ReteteDeHavcic" txt={t("About_third_step_button")}/>
+                                <Button src="https://github.com/qqwrxtr/StudiuIndivitual2" txt={t("About_third_step_button")}/>
                             </div>
                     </div>
                     <div className="row mt-5">
@@ -62,6 +63,19 @@ const AboutMe = () => {
                             <Button src="https://github.com/qqwrxtr/Practica" txt={t("About_fourth_step_button")}/>
                         </div>
                     </div>
+                    <div className="row mt-5">
+                        <div className="title_ocupation">
+                        <div className="dot step5"></div>
+                            <p>{t("About_fifth_step")}</p>    
+                        </div>  
+                        <div className="undertitle_ocupation">
+                            <p>{t("About_fifth_step_desc")}</p>    
+                        </div>
+                        <div className="seemore">      
+                            <ToProjects src="/projects" txt={t("About_fifth_step_button")}/>
+                        </div>
+                    </div>
+                    
                 </div>    
             </div>
         </div>

@@ -1,5 +1,5 @@
 .abt_me{
-    min-height: 100vh;
+    min-height: 110vh;
     margin: 50px 0;
 }
 
@@ -12,7 +12,7 @@
     -o-border-radius: 14px;
     color: white !important;
     opacity: 1;
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
