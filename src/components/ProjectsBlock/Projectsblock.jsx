@@ -14,7 +14,7 @@ const ProjectsBlock = (props) => {
                         </div>
                     </div>
                     <div className="row text-start">
-                        <div className="col-12">
+                        <div className="col-12 titlu_proiect">
                             <h3>{props.name}</h3>
                         </div>
                         <div className="col-12 description">

@@ -59,24 +59,3 @@ a{
     #button-4{
       width: 170px;
     }
-    
-    @media only screen and (max-width:768px) {
-    #button-4{
-      font-size: 0.9rem;
-    }
-    }
-    @media only screen and (max-width:490px) {
-      #button-4{
-        font-size: 0.8rem;
-      }
-    }
-    @media only screen and (max-width:380px) {
-      #button-4{
-        font-size: 0.7rem;
-      }
-    }
-    @media only screen and (max-width:330px) {
-      #button-4{
-        font-size: 0.6rem;
-      }
-    }

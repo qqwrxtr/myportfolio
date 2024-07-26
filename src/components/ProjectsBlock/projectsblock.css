@@ -11,7 +11,7 @@
     border: 1px solid #4F228D;
     font-size: 1.3rem;
     transition: border 0.3s;
-    width: 450px;
+    max-width: 450px;
     text-align: center;
 }
 
@@ -29,4 +29,13 @@
 }
 .no-padding{
     margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width:320px) {
+    .titlu_proiect h3{
+        font-size: 1.2rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
 }
