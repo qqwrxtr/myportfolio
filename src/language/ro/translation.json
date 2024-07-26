@@ -24,7 +24,7 @@
     "About_conclusion": "Călătoria Mea",
     "About_conclusion_desc": "Începând din 2019 cu tutoriale HTML și CSS pe YouTube, pasiunea mea pentru dezvoltarea web a crescut constant. Centrul de Excelență în Informatică și Tehnologii Informaționale mi-a oferit o bază solidă atât în dezvoltarea FrontEnd, cât și în cea BackEnd. Până în 2023, am creat o revistă online full-stack și am învățat React.js, ceea ce mi-a transformat abordarea în construirea interfețelor utilizator. Acum, ca student la Universitatea Tehnică a Moldovei și Web Developer la VenMedia SRL, continui să explorez noi biblioteci și să-mi îmbunătățesc abilitățile. Astăzi sunt mai bun ca niciodată, iar viitorul promite și mai multe lucruri mărețe.",
     "Desc_NeonSmile" : "Un joc interactiv în care jucătorii trebuie să dezamorseze trei bombe pentru a câștiga. Jocul oferă o experiență intensă și este realizat folosind HTML, CSS și JavaScript pur.",
-    "Desc_BombBlast": "Am creat un joc interactiv, în care jucătorii caută și descoperă trei bombe ascunse pentru a câștiga. Jocul oferă o experiență captivantă și este realizat folosind HTML, CSS și JavaScript",
+    "Desc_BombBlast": "Am creat un joc interactiv, în care jucătorii caută și descoperă trei bombe ascunse pentru a câștiga. Jocul oferă o experiență captivantă, este realizat folosind HTML, CSS și JavaScript",
     "Desc_ChestHunt": "Ceva asemănător cu Bomb Blast însă făcut sub formă de deșert și cufere cu comori, pentru a câștiga trebuie să găsești comoara, aplicația web e scrisă cu HTML, CSS și JS.",
 
 
@@ -32,5 +32,6 @@
 
 
 
+    "Preview":"Previzualizare",
     "Footer_rights" : "© 2024 Teodor. Toate drepturile sunt rezervate."
 }

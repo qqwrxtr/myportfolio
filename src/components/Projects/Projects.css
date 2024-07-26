@@ -1,0 +1,9 @@
+.title_proiecte h1{
+    margin-bottom: 30px !important;
+}
+
+@media only screen and (max-width:1000px) {
+    .title_proiecte h1{
+        text-align: center;
+    }
+}

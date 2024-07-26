@@ -10,8 +10,8 @@ import "./Projects.css";
 const Projects = () => {
     const { t } = useTranslation();
     return ( 
-        <div className="container">
-            <h2>{t("Projects")}</h2>
+        <div className="container title_proiecte">
+            <h1>{t("Projects")}</h1>
             <div className="row">
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 

@@ -1,4 +1,4 @@
-.gradient{
+.gradient {
     background: linear-gradient(130deg, #130428 7%, #25104d 34%, #381e6d 57%, #261045 85%, #190834 100%);
     background-size: 200% 200%;
     border-radius: 12px;
@@ -15,36 +15,69 @@
     text-align: center;
 }
 
-.jopa{
+.img-container {
+    position: relative;
+}
+
+.jopa {
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
     max-height: 240px !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
-.description{
+.preview-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.jopa:hover{
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.jopa:hover + .preview-text {
+    opacity: 1;
+}
+
+.description {
     font-size: 1.15rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-
-
-.no-padding{
+.no-padding {
     margin-bottom: 0 !important;
 }
 
-.ceva{
+.ceva {
     display: flex;
     align-items: end;
     justify-content: end;
 }
 
-
-@media only screen and (max-width:1400px) {
-    .center_blocks{
+@media only screen and (max-width: 1400px) {
+    .center_blocks {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,35 +85,34 @@
     }
 }
 
-
-@media only screen and (max-width:440px) {
-    .titlu_proiect h3{
+@media only screen and (max-width: 440px) {
+    .titlu_proiect h3 {
         font-size: 1.4rem;
     }
-    .description{
+    .description {
         font-size: 1.05rem;
     }
 }
 
-@media only screen and (max-width:319px) {
-    .no-padding{
+@media only screen and (max-width: 319px) {
+    .no-padding {
         display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
     }
-    .ceva{
+    .ceva {
         flex-direction: column;
         align-items: start;
         justify-content: start;
     }
 }
 
-@media only screen and (max-width:320px) {
-    .titlu_proiect h3{
+@media only screen and (max-width: 320px) {
+    .titlu_proiect h3 {
         font-size: 1.2rem;
     }
-    .description{
+    .description {
         font-size: 1rem;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React from "react";
 import "./aboutme.css"
 import { useTranslation } from 'react-i18next';
 import Button from "../buttons/buttontogit/ButtonToProjects";

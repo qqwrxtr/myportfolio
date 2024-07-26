@@ -1,3 +1,7 @@
+.home{
+    min-height: 70vh;
+}
+
 .title{
     font-size: 3.2rem;
     max-width: 390px;
@@ -93,19 +97,22 @@
 
 @media only screen and (max-width:520px) {
     .photo{
-        max-width: 200px;
+        max-width: 240px;
         width: 100%;
         object-fit: contain;
         z-index: 1;
-        margin-top: 135px;
-        margin-left: 250px;
-}
+        margin-top: 100px;
+        margin-left: 220px;
+    }
     .title{
         font-size: 2.6rem;
         max-width: 100%;
     }
     .under_title{
         font-size: 1rem;
+    }
+    .home{
+        min-height: 50vh;
     }
 }
 
@@ -115,7 +122,9 @@
     }
     .home{
         text-align: center;
+        min-height: 20vh;
     }
+    
 }
 
 @media only screen and (max-width:410px) {

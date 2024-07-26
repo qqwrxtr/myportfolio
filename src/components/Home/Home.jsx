@@ -9,7 +9,7 @@ const Home = () => {
     const { t } = useTranslation();
     return ( 
         <div className="container home d-flex flex-column align-items-center justify-content-center">
-            <div className="row d-flex align-items-center justify-content-between w-100">
+            <div className="row d-flex align-items-center justify-content-between w-100 top_mobile">
                 <div className="col-12 col-lg-6 kek">
                     <div className="title">
                         <p className="title">
