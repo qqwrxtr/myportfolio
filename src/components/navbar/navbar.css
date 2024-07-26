@@ -2,10 +2,6 @@
     background-color: var(--navfooter);
 }
 
-.navbar{
-    padding: 20px 0;
-}
-
 .navbar-nav{
     column-gap: 30px;
 }
@@ -33,6 +29,10 @@
     margin-top: -20px;
 }
 
+.navbar-phone{
+    display: none;
+}
+
 @media only screen and (max-width:1440px) {
     .navbar a {
         color: white !important;
@@ -55,7 +55,6 @@
         max-width: 200px;
         width: 100%;
         margin-top: 0px;
-        margin-left: -30px;
     }
 }
 
@@ -82,5 +81,50 @@
         max-width: 200px;
         width: 100%;
         margin-top: 0px;
+    }
+    .navbar-nav {
+        padding-top: 20px;
+        text-align: end !important;
+        align-items: end !important;
+        justify-content: end !important;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:472px) {
+    .firstpart .navbar-brand{
+        display: none;
+    }
+    .firstpart .navbar-phone{
+        display: block !important;
+        width: 120px;
+        height: 40px;
+    }
+    .butt_lang{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:377px) {
+    .firstpart .navbar-brand{
+        display: none;
+    }
+    .firstpart .navbar-phone{
+        display: block !important;
+        width: 90px;
+        height: 40px;
+    }
+    .butt_lang{
+        margin-top: 0;
+        height: 30px;
+        margin-top: 10px
+    }
+    .navbar-toggler-icon{
+        height: 20px;
+        margin-top: -5px;
+    }
+    .form-select.mobile{
+        font-size: 0.7rem;
+        max-width: 100px;
     }
 }

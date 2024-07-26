@@ -4,6 +4,7 @@ import LanguageSelector from '../LangChanger/Langchanger';
 import { useTranslation } from 'react-i18next';
 import i18n from './../../i18n/index.jsx';
 import teodor_logo from "./../../assets/img/Teodor_Logo.png"
+import teodor_logo_mobile from "./../../assets/img/Teodor_logo_mobile.svg"
 import './navbar.css';
 
 const Navbar = () => {
@@ -34,6 +35,9 @@ const Navbar = () => {
               <div className="firstpart">
                 <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>
                 <img src={teodor_logo} alt='Logo' className='img-fluid'/>
+                </Link>
+                <Link className="navbar-phone" to="/" onClick={() => handleNavClick('/')}>
+                <img src={teodor_logo_mobile} alt='Logo' className='img-fluid'/>
                 </Link>
                 <div className="butt_lang">
                   <button

@@ -6,7 +6,7 @@ import downloadCV from "./../../../assets/CV/CV.pdf";
 const CV = () => {
     const { t } = useTranslation();
     return ( 
-        <div className="button mt-5">
+        <div className="button">
             <a href={downloadCV} download className="btn btn-gradient text-center">{t("CV")}</a>
         </div>
      );
