@@ -18,7 +18,7 @@ const Home = () => {
                     </div>
                     <div className="under_title">
                         <p>
-                            {t("Home_undertitle")}&#128513;
+                            {t("Home_undertitle")}
                         </p>
                     </div>
                     <div className="flex d-flex da">

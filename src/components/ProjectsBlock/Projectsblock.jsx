@@ -5,11 +5,10 @@ import "./projectsblock.css"
 const ProjectsBlock = (props) => {
     return ( 
         <div className="projectsblock ">
-            <h2>Projects</h2>
             <div className="projects gradient">
                 <div className="project">
                     <div className="row pt-3">
-                        <div className="col-12">
+                        <div className="col-12 ">
                             <img src={props.img} alt="" className="img-fluid jopa" />
                         </div>
                     </div>
@@ -25,7 +24,7 @@ const ProjectsBlock = (props) => {
                                 <div className="col-6">
                                     <Button2 src={props.srcgit} txt="Git Hub"/>
                                 </div>
-                                <div className="col-6 d-flex align-items-end justify-content-end">
+                                <div className="col-6 ceva">
                                     <ButtonToSite srcsite={props.srcsite}/>
                                 </div>
                             </div>

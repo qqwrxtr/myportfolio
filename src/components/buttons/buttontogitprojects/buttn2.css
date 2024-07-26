@@ -4,8 +4,12 @@ a{
     display: flex;
     align-items: center;
     column-gap: 20px;
+    flex-wrap: nowrap;
 }
 
+a#text{
+  flex-wrap: nowrap;
+}
 
 #button-4 img{
     width: 20px;
@@ -69,13 +73,13 @@ a{
     @media only screen and (max-width:490px) {
       #button-4{
         font-size: 0.9rem;
-        width: 140px;
+        width: 150px;
       }
     }
     @media only screen and (max-width:380px) {
       #button-4{
         font-size: 0.8rem;
-        width: 135px;
+        width: 135px !important;
       }
     }
     @media only screen and (max-width:350px) {
@@ -87,7 +91,7 @@ a{
     @media only screen and (max-width:330px) {
       #button-4{
         font-size: 0.7rem;
-        width: 120px;
+        width: 130px !important;
       }
       #button-4 img{
         width: 15px;
