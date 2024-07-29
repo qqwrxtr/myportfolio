@@ -6,6 +6,7 @@ import img3 from "./../../assets/img/chesthunt.png"
 import img4 from "./../../assets/img/ventilator.png"
 import img5 from "./../../assets/img/helicopter.png"
 import img6 from "./../../assets/img/pegasus.png"
+import img7 from "./../../assets/img/youtube.png"
 
 
 
@@ -15,6 +16,8 @@ import chesthuntmp4 from "./../../assets/video/chesthunt.mp4"
 import ventilatormp4 from "./../../assets/video/ventilator.mp4"
 import helicopterwebm from "./../../assets/video/helicopter.webm"
 import pegasuswebm from "./../../assets/video/pegasus.webm"
+import youtubewebm from "./../../assets/video/youtubecopy.webm"
+
 
 
 import "./Projects.css";
@@ -91,6 +94,16 @@ const Projects = () => {
                         srcsite="https://pegasus-team.vercel.app/"
                         img={img6}
                         gif={pegasuswebm}
+                        useVideo={true}/>
+                </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/StudiuIndivitual2" 
+                        name="Youtube Copy"
+                        desc={t("Desc_Youtube")} 
+                        srcsite="https://studiu-indivitual2.vercel.app/youtube.html"
+                        img={img7}
+                        gif={youtubewebm}
                         useVideo={true}/>
                 </div>
             </div>
