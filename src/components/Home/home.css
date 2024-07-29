@@ -1,6 +1,8 @@
 .home{
-    min-height: 70vh;
+    height: 80vh;
 }
+
+
 
 .title{
     font-size: 3.2rem;
@@ -34,7 +36,7 @@
 
 .da{
     column-gap: 25px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 50px;
 }
 
@@ -48,16 +50,30 @@
         row-gap: 20px;
         margin-top: 30px;
     }
+    .sus{
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+    }
 }
 
 @media only screen and (max-width:990px){
+    .sus{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
     .kek{
         margin-top: 50px;
-        margin-bottom: -320px;
+        margin-bottom: -370px;
     }
     .da{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .title{
         font-size: 3rem;
@@ -81,17 +97,24 @@
 @media only screen and (max-width:768px){
     .kek{
         margin-top: 50px;
-        margin-bottom: -300px;
+        margin-bottom: -400px;
     }
     .photo{
-        margin-left: 20px;
+        margin-left: 40px;
     }
     .title{
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         max-width: 100%;
     }
     .home{
         margin-top: -40px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .title{
+        font-size: 2.2rem;
+        max-width: 100%;
     }
 }
 
@@ -102,10 +125,10 @@
         object-fit: contain;
         z-index: 1;
         margin-top: 100px;
-        margin-left: 220px;
+        margin-left: 250px;
     }
     .title{
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         max-width: 100%;
     }
     .under_title{
@@ -124,7 +147,10 @@
         text-align: center;
         min-height: 20vh;
     }
-    
+    .w-100{
+        margin-top: -500px;
+    }
+
 }
 
 @media only screen and (max-width:410px) {
