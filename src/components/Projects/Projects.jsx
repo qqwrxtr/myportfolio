@@ -6,7 +6,11 @@ import img3 from "./../../assets/img/chesthunt.png"
 import img4 from "./../../assets/img/ventilator.png"
 import img5 from "./../../assets/img/helicopter.png"
 import img6 from "./../../assets/img/pegasus.png"
-import img7 from "./../../assets/img/youtube.png"
+import img7 from "./../../assets/img/tictactoe.png"
+import img8 from "./../../assets/img/youtube.png"
+import img9 from "./../../assets/img/joom.png"
+
+
 
 
 
@@ -17,6 +21,10 @@ import ventilatormp4 from "./../../assets/video/ventilator.mp4"
 import helicopterwebm from "./../../assets/video/helicopter.webm"
 import pegasuswebm from "./../../assets/video/pegasus.webm"
 import youtubewebm from "./../../assets/video/youtubecopy.webm"
+import joomwebm from "./../../assets/video/joom.webm"
+import xowebm from "./../../assets/video/xo.webm"
+
+
 
 
 
@@ -43,7 +51,7 @@ const Projects = () => {
                         desc={t("Desc_NeonSmile")} 
                         srcsite="https://neon-smile-en.vercel.app/"
                         img={img1}
-                        gif={neonsmilemp4}
+                        video={neonsmilemp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -53,7 +61,7 @@ const Projects = () => {
                         desc={t("Desc_BombBlast")} 
                         srcsite="https://bomb-blast-en.vercel.app/"
                         img={img2}
-                        gif={bombblastmp4}
+                        video={bombblastmp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -63,7 +71,7 @@ const Projects = () => {
                         desc={t("Desc_ChestHunt")} 
                         srcsite="https://chest-hunt.vercel.app/"
                         img={img3}
-                        gif={chesthuntmp4}
+                        video={chesthuntmp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -73,7 +81,7 @@ const Projects = () => {
                         desc={t("Desc_Ventilator")} 
                         srcsite="https://ventilator-nine.vercel.app/"
                         img={img4}
-                        gif={ventilatormp4}
+                        video={ventilatormp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -83,7 +91,7 @@ const Projects = () => {
                         desc={t("Desc_Helicopter")} 
                         srcsite="https://helicopter-helicopter.vercel.app/"
                         img={img5}
-                        gif={helicopterwebm}
+                        video={helicopterwebm}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -93,7 +101,17 @@ const Projects = () => {
                         desc={t("Desc_Pegasus")} 
                         srcsite="https://pegasus-team.vercel.app/"
                         img={img6}
-                        gif={pegasuswebm}
+                        video={pegasuswebm}
+                        useVideo={true}/>
+                </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/X-O" 
+                        name={t("XO")}
+                        desc={t("Desc_XO")} 
+                        srcsite="https://x-o-mocha-ten.vercel.app/"
+                        img={img7}
+                        video={xowebm}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -102,13 +120,25 @@ const Projects = () => {
                         name="Youtube Copy"
                         desc={t("Desc_Youtube")} 
                         srcsite="https://studiu-indivitual2.vercel.app/youtube.html"
-                        img={img7}
-                        gif={youtubewebm}
+                        img={img8}
+                        video={youtubewebm}
                         useVideo={true}/>
                 </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/JoomProject" 
+                        name="Joom Copy"
+                        desc={t("Desc_Joom")} 
+                        srcsite="https://joom-project.vercel.app/joom.html"
+                        img={img9}
+                        video={joomwebm}
+                        useVideo={true}/>
+                </div>     
             </div>
         </div>
      );
 }
+
+//TODO 6 projects per page
  
 export default Projects;

@@ -27,7 +27,7 @@ const ProjectsBlock = (props) => {
             <div className="projects gradient">
                 <div className="project">
                     <div className="row pt-3">
-                        <div className="col-12 img-container" onClick={() => handleImgClick(props.useVideo ? props.gif : props.img)}>
+                        <div className="col-12 img-container" onClick={() => handleImgClick(props.useVideo ? props.video : props.img)}>
                             <img src={props.img} alt="" className={`img-fluid img-maladet ${props.useVideo ? 'jopa' : ''}`} />
                             <div className="preview-text">{t("Preview")}</div>
                         </div>

@@ -1,0 +1,35 @@
+.title_platform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.name_platform {
+    padding: 0 0 0 20px;
+}
+
+.finish_text{
+    font-size: 1.4rem;
+    text-align: center !important;
+}
+
+.img_platform img{
+    width: 32px;
+    height: 32px;
+}
+
+.height-big{
+    min-height: 70vh;
+}
+
+@media only screen and (max-width:1400px) {
+    .row-gap-3 .col .name_platform{
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .row-gap-3 .col .name_platform{
+        font-size: 1rem;
+    }
+}
