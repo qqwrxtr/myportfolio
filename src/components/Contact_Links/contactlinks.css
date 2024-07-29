@@ -32,4 +32,8 @@
     .row-gap-3 .col .name_platform{
         font-size: 1rem;
     }
+    .title_platform{
+        justify-content: start;
+    }
 }
+

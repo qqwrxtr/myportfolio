@@ -29,29 +29,29 @@ const Contact = () => {
                     <p className="text-center">{t("Contact_text")}</p>
                 </div>
             </div>
-            <div className="row d-flex justify-content-center align-items-center row-gap-3">
-                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center telegram">
+            <div className="row d-flex justify-content-center align-items-center row-gap-3 row-col-min">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center telegram w200">
                         <ContactLinks 
                             link="https://t.me/WhuZis"
                             platicon={telegramicon}
                             username="@WhuZis"
                             width="220px"/>
                     </div>
-                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center instagram">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center instagram w200">
                         <ContactLinks 
                             link="https://www.instagram.com/qqwrxtr/"
                             platicon={instagram}
                             username="@qqwrxtr"
                             width="220px"/>
                     </div>
-                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center discord">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center discord w200">
                         <ContactLinks 
                             link="https://discord.com/"
                             platicon={discord}
                             username="noname3584"
                             width="220px"/> 
                     </div>
-                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center github">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center github w200">
                         <ContactLinks 
                             link="https://github.com/qqwrxtr"
                             platicon={githubicon}
