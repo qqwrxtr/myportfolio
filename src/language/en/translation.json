@@ -31,6 +31,9 @@
     "Projects_description" : "For a brief presentation of the project, click on the project image",
     "Helicopter" : "Helicopter",
     "Desc_Helicopter": "A mini application developed with ReactJS, featuring a dynamic helicopter game. Collect money to win. Simple and interactive!",
+    "Desc_Pegasus": "A simple page created with HTML, CSS, and JavaScript on the Crypto theme. I found this design in Figma and decided to practice on it. It turned out great!",
+
+
 
     "Preview":"Preview",
     "Footer_rights" : "© 2024 Teodor. All Rights Reserved."

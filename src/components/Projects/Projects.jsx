@@ -5,7 +5,7 @@ import img2 from "./../../assets/img/bombblast.png"
 import img3 from "./../../assets/img/chesthunt.png"
 import img4 from "./../../assets/img/ventilator.png"
 import img5 from "./../../assets/img/helicopter.png"
-
+import img6 from "./../../assets/img/pegasus.png"
 
 
 
@@ -14,6 +14,8 @@ import bombblastmp4 from "./../../assets/video/bombblast.mp4"
 import chesthuntmp4 from "./../../assets/video/chesthunt.mp4"
 import ventilatormp4 from "./../../assets/video/ventilator.mp4"
 import helicopterwebm from "./../../assets/video/helicopter.webm"
+import pegasuswebm from "./../../assets/video/pegasus.webm"
+
 
 import "./Projects.css";
 
@@ -79,6 +81,16 @@ const Projects = () => {
                         srcsite="https://helicopter-helicopter.vercel.app/"
                         img={img5}
                         gif={helicopterwebm}
+                        useVideo={true}/>
+                </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/Pegasus_Team" 
+                        name="Pegasus Team"
+                        desc={t("Desc_Pegasus")} 
+                        srcsite="https://pegasus-team.vercel.app/"
+                        img={img6}
+                        gif={pegasuswebm}
                         useVideo={true}/>
                 </div>
             </div>
