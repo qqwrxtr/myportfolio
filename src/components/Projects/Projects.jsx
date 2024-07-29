@@ -3,12 +3,17 @@ import ProjectsBlock from "../ProjectsBlock/Projectsblock";
 import img1 from "./../../assets/img/neonsmile.png"
 import img2 from "./../../assets/img/bombblast.png"
 import img3 from "./../../assets/img/chesthunt.png"
+import img4 from "./../../assets/img/ventilator.png"
+import img5 from "./../../assets/img/helicopter.png"
 
 
 
-import neonsmilemp4 from "./../../assets/gifs/neonsmile.mp4"
-import bombblastmp4 from "./../../assets/gifs/bombblast.mp4"
-import chesthuntmp4 from "./../../assets/gifs/chesthunt.mp4"
+
+import neonsmilemp4 from "./../../assets/video/neonsmile.mp4"
+import bombblastmp4 from "./../../assets/video/bombblast.mp4"
+import chesthuntmp4 from "./../../assets/video/chesthunt.mp4"
+import ventilatormp4 from "./../../assets/video/ventilator.mp4"
+import helicopterwebm from "./../../assets/video/helicopter.webm"
 
 import "./Projects.css";
 
@@ -17,8 +22,15 @@ const Projects = () => {
     const { t } = useTranslation();
     return ( 
         <div className="container title_proiecte">
-            <h1>{t("Projects")}</h1>
             <div className="row">
+                <div className="col-12">
+                    <h2>{t("Projects")}</h2>
+                </div>
+                <div className="col-12">
+                    <p>*{t("Projects_description")}</p>
+                </div>
+            </div>
+            <div className="row row-gap d-flex justify-content-center">
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 
                         srcgit="https://github.com/qqwrxtr/NeonSmileEN" 
@@ -26,7 +38,8 @@ const Projects = () => {
                         desc={t("Desc_NeonSmile")} 
                         srcsite="https://neon-smile-en.vercel.app/"
                         img={img1}
-                        gif={neonsmilemp4}/>
+                        gif={neonsmilemp4}
+                        useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 
@@ -35,7 +48,8 @@ const Projects = () => {
                         desc={t("Desc_BombBlast")} 
                         srcsite="https://bomb-blast-en.vercel.app/"
                         img={img2}
-                        gif={bombblastmp4}/>
+                        gif={bombblastmp4}
+                        useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
                     <ProjectsBlock 
@@ -44,7 +58,28 @@ const Projects = () => {
                         desc={t("Desc_ChestHunt")} 
                         srcsite="https://chest-hunt.vercel.app/"
                         img={img3}
-                        gif={chesthuntmp4}/>
+                        gif={chesthuntmp4}
+                        useVideo={true}/>
+                </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/ventilator" 
+                        name={t("Ventilator")}
+                        desc={t("Desc_Ventilator")} 
+                        srcsite="https://ventilator-nine.vercel.app/"
+                        img={img4}
+                        gif={ventilatormp4}
+                        useVideo={true}/>
+                </div>
+                <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
+                    <ProjectsBlock 
+                        srcgit="https://github.com/qqwrxtr/helicopter_helicopter" 
+                        name={t("Helicopter")}
+                        desc={t("Desc_Helicopter")} 
+                        srcsite="https://helicopter-helicopter.vercel.app/"
+                        img={img5}
+                        gif={helicopterwebm}
+                        useVideo={true}/>
                 </div>
             </div>
         </div>

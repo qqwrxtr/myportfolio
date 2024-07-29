@@ -2,6 +2,10 @@
     margin-bottom: 30px !important;
 }
 
+.row-gap{
+    row-gap: 25px;
+}
+
 @media only screen and (max-width:1000px) {
     .title_proiecte h1{
         text-align: center;

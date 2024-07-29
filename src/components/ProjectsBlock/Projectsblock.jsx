@@ -11,8 +11,10 @@ const ProjectsBlock = (props) => {
     const [currentImgSrc, setCurrentImgSrc] = useState("");
 
     const handleImgClick = (imgSrc) => {
-        setCurrentImgSrc(imgSrc);
-        setIsOverlayVisible(true);
+        if (props.useVideo) {
+            setCurrentImgSrc(imgSrc);
+            setIsOverlayVisible(true);
+        }
     };
 
     const handleCloseOverlay = () => {
@@ -25,8 +27,8 @@ const ProjectsBlock = (props) => {
             <div className="projects gradient">
                 <div className="project">
                     <div className="row pt-3">
-                        <div className="col-12 img-container" onClick={() => handleImgClick(props.gif)}>
-                            <img src={props.img} alt="" className="img-fluid jopa" />
+                        <div className="col-12 img-container" onClick={() => handleImgClick(props.useVideo ? props.gif : props.img)}>
+                            <img src={props.img} alt="" className={`img-fluid img-maladet ${props.useVideo ? 'jopa' : ''}`} />
                             <div className="preview-text">{t("Preview")}</div>
                         </div>
                     </div>
@@ -50,7 +52,7 @@ const ProjectsBlock = (props) => {
                     </div>
                 </div>
             </div>
-            {isOverlayVisible && <PhotoOverflow src={currentImgSrc} onClose={handleCloseOverlay} />}
+            {isOverlayVisible && props.useVideo && <PhotoOverflow src={currentImgSrc} onClose={handleCloseOverlay} />}
         </div>
     );
 }

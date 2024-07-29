@@ -42,4 +42,6 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    background-color:transparent;
+    margin-top: 1.2rem;
 }

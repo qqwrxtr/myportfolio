@@ -26,12 +26,14 @@
     "Desc_NeonSmile" : "Site dinamic de cazinou cu un mini-joc captivant în care jucătorii aleg cărți și speră la noroc. Aplicația web este construită folosind HTML, CSS și JavaScript simplu.",
     "Desc_BombBlast": "Am creat un joc interactiv, în care jucătorii caută și descoperă trei bombe ascunse pentru a câștiga. Jocul oferă o experiență captivantă, este realizat folosind HTML, CSS și JavaScript",
     "Desc_ChestHunt": "Ceva asemănător cu Bomb Blast însă făcut sub formă de deșert și cufere cu comori, pentru a câștiga trebuie să găsești comoara, aplicația web e scrisă cu HTML, CSS și JS.",
-
-
-
-
-
+    "Ventilator" : "Ventilator",
+    "Desc_Ventilator": "Imaginează-ți căldura verii și, cu un clic, pornești un ventilator care eliberează o briză răcoroasă. Această aplicație elegantă, este creată cu ReactJS. Răcorește-te cu stil!",
     "Projects" : "Proiecte",
+    "Projects_description" : "Pentru o mica prezentare a proiectului faceti click pe imaginea proiectului",
+    "Helicopter" : "Elicopter",
+    "Desc_Helicopter": "O mini aplicație captivantă dezvoltată cu ReactJS, care prezintă un joc dinamic cu elicopterul, plin de animații și efecte sonore. Strânge bani pentru a câștiga. Simplu și interactiv!",
+
+
     "Preview":"Previzualizare",
     "Footer_rights" : "© 2024 Teodor. Toate drepturile sunt rezervate."
 }

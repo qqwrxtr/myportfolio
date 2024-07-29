@@ -26,7 +26,12 @@
     "Desc_NeonSmile" : "I developed a dynamic casino website with an engaging mini-game where players pick cards and hope for luck. The web application is built using HTML, CSS, and vanilla JavaScript ",
     "Desc_BombBlast": "Embark on an interactive game where I challenge players to find three hidden bombs to win. The gameplay is thrilling, offering a mix of strategy and luck. Built with HTML, CSS, and vanilla JavaScript",
     "Desc_ChestHunt": "Something similar to Bomb Blast but set in a desert theme with treasure chests. To win, you need to find the treasure. The web application is built with HTML, CSS, and JS.",
-    
+    "Ventilator" : "Fan",
+    "Desc_Ventilator": "Imagine the summer heat, and with a click, you turn on a fan that releases a cool breeze. This elegant application is created with ReactJS. Cool down in style!",
+    "Projects_description" : "For a brief presentation of the project, click on the project image",
+    "Helicopter" : "Helicopter",
+    "Desc_Helicopter": "A mini application developed with ReactJS, featuring a dynamic helicopter game. Collect money to win. Simple and interactive!",
+
     "Preview":"Preview",
     "Footer_rights" : "© 2024 Teodor. All Rights Reserved."
 }
