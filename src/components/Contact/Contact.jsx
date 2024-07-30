@@ -60,7 +60,7 @@ const Contact = () => {
                     </div>
             </div>
             <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-6 col-md-12 col-lg-12 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center email">
+                    <div className="col-6 col-md-12 col-lg-12 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center email">
                         <ContactLinks 
                             link="mailto:teodorghirba1@gmail.com"
                             platicon={email}
