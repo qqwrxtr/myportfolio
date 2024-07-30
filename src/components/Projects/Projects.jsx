@@ -11,18 +11,15 @@ import img8 from "./../../assets/img/youtube.png"
 import img9 from "./../../assets/img/joom.png"
 
 
-
-
-
 import neonsmilemp4 from "./../../assets/video/neonsmile.mp4"
 import bombblastmp4 from "./../../assets/video/bombblast.mp4"
 import chesthuntmp4 from "./../../assets/video/chesthunt.mp4"
 import ventilatormp4 from "./../../assets/video/ventilator.mp4"
-import helicopterwebm from "./../../assets/video/helicopter.webm"
-import pegasuswebm from "./../../assets/video/pegasus.webm"
-import youtubewebm from "./../../assets/video/youtubecopy.webm"
-import joomwebm from "./../../assets/video/joom.webm"
-import xowebm from "./../../assets/video/xo.webm"
+import helicoptermp4 from "./../../assets/video/helicopter.mp4"
+import pegasusmp4 from "./../../assets/video/pegasus.mp4"
+import youtubemp4 from "./../../assets/video/youtubecopy.mp4"
+import joommp4 from "./../../assets/video/joom.mp4"
+import xomp4 from "./../../assets/video/xo.mp4"
 
 
 
@@ -91,7 +88,7 @@ const Projects = () => {
                         desc={t("Desc_Helicopter")} 
                         srcsite="https://helicopter-helicopter.vercel.app/"
                         img={img5}
-                        video={helicopterwebm}
+                        video={helicoptermp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -101,7 +98,7 @@ const Projects = () => {
                         desc={t("Desc_Pegasus")} 
                         srcsite="https://pegasus-team.vercel.app/"
                         img={img6}
-                        video={pegasuswebm}
+                        video={pegasusmp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -111,7 +108,7 @@ const Projects = () => {
                         desc={t("Desc_XO")} 
                         srcsite="https://x-o-mocha-ten.vercel.app/"
                         img={img7}
-                        video={xowebm}
+                        video={xomp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -121,7 +118,7 @@ const Projects = () => {
                         desc={t("Desc_Youtube")} 
                         srcsite="https://studiu-indivitual2.vercel.app/youtube.html"
                         img={img8}
-                        video={youtubewebm}
+                        video={youtubemp4}
                         useVideo={true}/>
                 </div>
                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-12 center_blocks">
@@ -131,7 +128,7 @@ const Projects = () => {
                         desc={t("Desc_Joom")} 
                         srcsite="https://joom-project.vercel.app/joom.html"
                         img={img9}
-                        video={joomwebm}
+                        video={joommp4}
                         useVideo={true}/>
                 </div>     
             </div>

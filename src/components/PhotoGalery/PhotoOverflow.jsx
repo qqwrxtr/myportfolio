@@ -13,6 +13,7 @@ const PhotoOverflow = ({ src, onClose }) => {
                     src={src}
                     className={`video-fluid scale ${loaded ? 'loaded' : ''}`}
                     autoPlay
+                    preload="auto"
                     loop
                     muted
                     onLoadedData={() => setLoaded(true)}
