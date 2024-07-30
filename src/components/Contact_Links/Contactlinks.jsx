@@ -4,9 +4,9 @@ import "./contactlinks.css"
 
 
 const ContactLinks = (links) => {
-    return ( 
-        <div className="btn-gradient width" style={{ width: links.width }}>
-            <a href={links.link}>
+    return (
+        <a href={links.link}> 
+            <div className="btn-gradient width" style={{ width: links.width }}>
                 <div className="title_platform">
                     <div className="img_platform">
                         <img src={links.platicon} alt="" />
@@ -15,8 +15,8 @@ const ContactLinks = (links) => {
                         {links.username}
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
      );
 }
  
