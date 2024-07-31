@@ -38,7 +38,6 @@ const Home = () => {
                 <div className="col-12 col-lg-6 photo">
                     <img 
                         src={me} 
-                        alt={t("Home_Image_Alt")}
                         className="img-fluid" 
                         loading="lazy" 
                         width="373"

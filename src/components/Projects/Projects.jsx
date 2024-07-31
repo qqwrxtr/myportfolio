@@ -109,7 +109,6 @@ const Projects = () => {
             useVideo: true,
         },
     ];
-
     return (
         <div className="container title_proiecte">
             <div className="row">
