@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LanguageSelector from '../LangChanger/Langchanger';
 import { useTranslation } from 'react-i18next';
 import i18n from './../../i18n/index.jsx';
-import teodor_logo from "./../../assets/img/Teodor_Logo.png"
-import teodor_logo_mobile from "./../../assets/img/Teodor_logo_mobile.svg"
+import teodor_logo from "./../../assets/img/Teodor_Logo.png";
+import teodor_logo_mobile from "./../../assets/img/Teodor_logo_mobile.svg";
 import './navbar.css';
 
 const Navbar = () => {
@@ -17,14 +17,14 @@ const Navbar = () => {
     setActivePage(location.pathname);
   }, [location.pathname]);
 
-  const handleNavClick = (page) => {
+  const handleNavClick = useCallback((page) => {
     setActivePage(page);
-  };
+  }, []);
 
-  const handleLanguageChange = (language) => {
+  const handleLanguageChange = useCallback((language) => {
     i18n.changeLanguage(language);
     setSelectedLanguage(language);
-  };
+  }, []);
 
   return (
     <div className="container pt-2 bg-all">
@@ -34,10 +34,10 @@ const Navbar = () => {
             <div className="container-fluid">
               <div className="firstpart">
                 <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>
-                <img src={teodor_logo} alt='Logo' className='img-fluid'/>
+                  <img src={teodor_logo} alt='Logo' className='img-fluid'/>
                 </Link>
                 <Link className="navbar-phone" to="/" onClick={() => handleNavClick('/')}>
-                <img src={teodor_logo_mobile} alt='Logo' className='img-fluid'/>
+                  <img src={teodor_logo_mobile} alt='Logo' className='img-fluid'/>
                 </Link>
                 <div className="butt_lang">
                   <button
@@ -48,9 +48,7 @@ const Navbar = () => {
                     aria-controls="navbarNav"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
-                    style={{
-                        backgroundColor:"white"
-                    }}
+                    style={{ backgroundColor: "white" }}
                   >
                     <span className="navbar-toggler-icon"></span>
                   </button>
@@ -59,42 +57,10 @@ const Navbar = () => {
               </div>
               <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav d-flex align-items-center">
-                  <li className="nav-item">
-                    <Link
-                      className={`nav-link ${activePage === '/' ? 'active' : ''}`}
-                      to="/"
-                      onClick={() => handleNavClick('/')}
-                    >
-                      {t('Nav_Home')}
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      className={`nav-link ${activePage === '/about' ? 'active' : ''}`}
-                      to="/about"
-                      onClick={() => handleNavClick('/about')}
-                    >
-                      {t('Nav_Abtme')}
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      className={`nav-link ${activePage === '/projects' ? 'active' : ''}`}
-                      to="/projects"
-                      onClick={() => handleNavClick('/projects')}
-                    >
-                      {t('Nav_proj')}
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      className={`nav-link ${activePage === '/contact' ? 'active' : ''}`}
-                      to="/contact"
-                      onClick={() => handleNavClick('/contact')}
-                    >
-                      {t('Nav_contact')}
-                    </Link>
-                  </li>
+                  <NavItem to="/" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_Home')} />
+                  <NavItem to="/about" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_Abtme')} />
+                  <NavItem to="/projects" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_proj')} />
+                  <NavItem to="/contact" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_contact')} />
                   <li>
                     <LanguageSelector selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
                   </li>
@@ -107,5 +73,17 @@ const Navbar = () => {
     </div>
   );
 };
+
+const NavItem = React.memo(({ to, activePage, handleNavClick, label }) => (
+  <li className="nav-item">
+    <Link
+      className={`nav-link ${activePage === to ? 'active' : ''}`}
+      to={to}
+      onClick={() => handleNavClick(to)}
+    >
+      {label}
+    </Link>
+  </li>
+));
 
 export default Navbar;

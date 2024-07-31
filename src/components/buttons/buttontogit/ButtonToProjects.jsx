@@ -3,8 +3,6 @@
 import "./buttn.css";
 import githubicon from "./../../../assets/img/cat_white.png"
 
-
-
 const Button = (href) => {
     return ( 
         <div id="button-3">

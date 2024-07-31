@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "../navbar/navbar.css";
 
 const LanguageSelector = ({ className, selectedLanguage, onChangeLanguage }) => {
-    const chooseLanguage = (e) => {
+    const chooseLanguage = useCallback((e) => {
         e.preventDefault();
         onChangeLanguage(e.target.value);
-    }
+    }, [onChangeLanguage]);
+
+    const selectStyle = className === 'mobile' ? { display: 'none' } : { display: 'block' };
 
     return (
         <select
             value={selectedLanguage}
             onChange={chooseLanguage}
             className={`form-select ${className}`}
-            style={{ display: className === 'mobile' ? 'none' : 'block' }}
-        >  
+            style={selectStyle}
+        >
             <option value="ro">Română</option>
             <option value="en">English</option>
             <option value="ru">Руский</option>
@@ -21,4 +23,4 @@ const LanguageSelector = ({ className, selectedLanguage, onChangeLanguage }) => 
     );
 };
 
-export default LanguageSelector;
+export default React.memo(LanguageSelector);

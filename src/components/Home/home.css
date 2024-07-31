@@ -2,8 +2,6 @@
     height: 80vh;
 }
 
-
-
 .title{
     font-size: 3.2rem;
     max-width: 390px;
@@ -38,6 +36,10 @@
     column-gap: 25px;
     flex-wrap: nowrap;
     margin-top: 50px;
+}
+
+.kudasai{
+    margin-top: 20px;
 }
 
 .cv .btn{

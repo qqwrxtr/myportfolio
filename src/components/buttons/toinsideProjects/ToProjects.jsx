@@ -7,7 +7,7 @@ const ToProjectsButton = () => {
     const { t } = useTranslation();
     return ( 
         <div className="button">
-            <Link to="/projects" className="btn btn-gradient text-center">{t("To_Projects")}</Link>
+            <Link to="/projects" className="btn btn-gradient text-center kudasai">{t("To_Projects")}</Link>
         </div>
      );
 }

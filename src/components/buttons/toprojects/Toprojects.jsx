@@ -1,5 +1,4 @@
 //page projects
-
 import "./toprojects.css";
 import nexticon from "./../../../assets/img/next.png"
 import { Link } from "react-router-dom";

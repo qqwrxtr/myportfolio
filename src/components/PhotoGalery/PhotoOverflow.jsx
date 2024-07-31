@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./photooverflow.css";
 
 const PhotoOverflow = ({ src, onClose }) => {
     const [loaded, setLoaded] = useState(false);
+
+    const handleLoadedData = useCallback(() => {
+        setLoaded(true);
+    }, []);
 
     return (
         <div className="overflow">
@@ -16,11 +20,11 @@ const PhotoOverflow = ({ src, onClose }) => {
                     preload="auto"
                     loop
                     muted
-                    onLoadedData={() => setLoaded(true)}
+                    onLoadedData={handleLoadedData}
                 />
             </div>
         </div>
     );
 }
 
-export default PhotoOverflow;
+export default React.memo(PhotoOverflow);

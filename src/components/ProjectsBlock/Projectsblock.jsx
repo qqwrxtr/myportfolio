@@ -1,34 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Button2 from "../buttons/buttontogitprojects/ButtonToGit2";
 import ButtonToSite from "../buttons/buttontosite/ButtonToSlte";
 import { useTranslation } from "react-i18next";
 import PhotoOverflow from "./../PhotoGalery/PhotoOverflow";
 import "./projectsblock.css"
 
-const ProjectsBlock = (props) => {
+const ProjectsBlock = React.memo((props) => {
     const { t } = useTranslation();
     const [isOverlayVisible, setIsOverlayVisible] = useState(false);
     const [currentImgSrc, setCurrentImgSrc] = useState("");
 
-    const handleImgClick = (imgSrc) => {
+    const handleImgClick = useCallback((imgSrc) => {
         if (props.useVideo) {
             setCurrentImgSrc(imgSrc);
             setIsOverlayVisible(true);
         }
-    };
+    }, [props.useVideo]);
 
-    const handleCloseOverlay = () => {
+    const handleCloseOverlay = useCallback(() => {
         setIsOverlayVisible(false);
         setCurrentImgSrc("");
-    };
+    }, []);
 
     return (
         <div className="projectsblock">
             <div className="projects gradient">
                 <div className="project">
                     <div className="row pt-3">
-                        <div className="col-12 img-container" onClick={() => handleImgClick(props.useVideo ? props.video : props.img)}>
-                            <img src={props.img} alt="" className={`img-fluid img-maladet ${props.useVideo ? 'jopa' : ''}`} />
+                        <div className="col-12 img-container">
+                            <img 
+                                src={props.img} 
+                                alt="" 
+                                className={`img-fluid img-maladet ${props.useVideo ? 'jopa' : ''}`} 
+                                onClick={() => handleImgClick(props.useVideo ? props.video : props.img)} 
+                            />
                             <div className="preview-text">{t("Preview")}</div>
                         </div>
                     </div>
@@ -55,6 +60,6 @@ const ProjectsBlock = (props) => {
             {isOverlayVisible && props.useVideo && <PhotoOverflow src={currentImgSrc} onClose={handleCloseOverlay} />}
         </div>
     );
-}
+});
 
 export default ProjectsBlock;
