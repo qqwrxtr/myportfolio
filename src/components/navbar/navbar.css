@@ -118,6 +118,8 @@
     }
     .firstpart .navbar-brand {
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 43px;
     }
 
@@ -131,5 +133,11 @@
     }
     .navbar-nav {
         align-items: center;
+    }
+    .firstpart a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
     }
 }

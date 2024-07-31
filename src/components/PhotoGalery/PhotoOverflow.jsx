@@ -11,10 +11,12 @@ const PhotoOverflow = ({ src, onClose }) => {
     return (
         <div className="overflow">
             <div className="overflow-inner">
-                <button className="close-button" onClick={onClose} aria-label="Close">
-                    X
-                </button>
-                {!loaded && <div className="placeholder">Loading...</div>}
+                <div className="d-flex justify-content-between" style={{width:"200px"}}>
+                    <button className="close-button" onClick={onClose} aria-label="Close">
+                        X
+                    </button>
+                    {!loaded && <div className="placeholder">Loading...</div>}
+                </div>
                 <video
                     src={src}
                     className={`video-fluid ${loaded ? 'loaded' : ''}`}
