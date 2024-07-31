@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="container pt-2 bg-all">
+    <div className="container pt-2 bg-all mb-2">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <div className="firstpart">
@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul className="navbar-nav d-flex align-items-end">
+            <ul className="navbar-nav">
               {['/', '/about', '/projects', '/contact'].map((path) => (
                 <NavItem 
                   key={path}

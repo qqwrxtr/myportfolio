@@ -64,7 +64,7 @@
     }
 }
 
-@media only screen and (max-width:990px){
+@media only screen and (max-width:991px){
     .sus{
         transform: translateY(0);
         -webkit-transform: translateY(0);
