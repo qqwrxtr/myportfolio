@@ -24,13 +24,13 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <SpeedInsights />
-          <Analytics />
         </main>
         <footer>
           <Footer />
         </footer>
       </Router>
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 };

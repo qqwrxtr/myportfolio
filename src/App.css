@@ -68,5 +68,4 @@ header {
 footer {
   flex-shrink: 0;
   background-color: var(--navfooter);
-  margin-top: auto;
 }

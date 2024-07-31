@@ -1,18 +1,22 @@
+:root {
+    --primary-color: #130428;
+    --secondary-color: #190834;
+    --border-color: #4F228D;
+}
+
+.projectsblock {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 .gradient {
-    background: linear-gradient(130deg, #130428 7%, #25104d 34%, #381e6d 57%, #261045 85%, #190834 100%);
-    background-size: 200% 200%;
+    background: linear-gradient(130deg, var(--primary-color) 7%, #25104d 34%, #381e6d 57%, #261045 85%, var(--secondary-color) 100%);
     border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
     color: white;
     padding: 10px 15px;
-    border: 1px solid #4F228D;
+    border: 1px solid var(--border-color);
     font-size: 1.3rem;
     transition: border 0.3s;
-    max-width: 450px;
-    text-align: center;
 }
 
 .img-container {
@@ -21,16 +25,8 @@
 
 .jopa, .img-maladet {
     border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
     max-height: 240px !important;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .preview-text {
@@ -43,16 +39,11 @@
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
     pointer-events: none;
 }
 
-.jopa:hover{
+.jopa:hover {
     filter: brightness(0.5);
-    -webkit-filter: brightness(0.5);
     cursor: pointer;
 }
 
