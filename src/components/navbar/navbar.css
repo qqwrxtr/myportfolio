@@ -33,6 +33,7 @@
     max-width: 300px;
     width: 100%;
     height: auto;
+    margin-top: -10px;
 }
 
 .navbar-phone {
@@ -56,6 +57,7 @@
 
     .navbar-brand img {
         max-width: 250px;
+        
     }
 }
 
@@ -85,6 +87,9 @@
         padding-top: 20px;
         text-align: end !important;
         flex-direction: column;
+    }
+    .navbar-nav img{
+        margin-top: 0px;
     }
 }
 
