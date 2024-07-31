@@ -1,7 +1,7 @@
 {
-    "Nav_Home" : "Acasă",
-    "Nav_Abtme" : "Despre Mine",
-    "Nav_proj" : "Proiecte",
+    "Nav_" : "Acasă",
+    "Nav_about" : "Despre Mine",
+    "Nav_projects" : "Proiecte",
     "Nav_contact" : "Contacte",
     "Home_title" : "Salut, sunt Teodor Ghirba",
     "Home_undertitle" : "Sunt dezvoltator Web FullStack, am terminat Centrul De Excelență în Informatică și Tehnologii Informaționale, sunt student la Universitatea Tehnica din Moldova și activez ca Web Developer la VenMedia SRL ",

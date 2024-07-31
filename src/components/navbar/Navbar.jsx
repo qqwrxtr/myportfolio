@@ -28,48 +28,49 @@ const Navbar = () => {
 
   return (
     <div className="container pt-2 bg-all">
-      <div className="row">
-        <div className="col-12">
-          <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
-              <div className="firstpart">
-                <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>
-                  <img src={teodor_logo} alt='Logo' className='img-fluid'/>
-                </Link>
-                <Link className="navbar-phone" to="/" onClick={() => handleNavClick('/')}>
-                  <img src={teodor_logo_mobile} alt='Logo' className='img-fluid'/>
-                </Link>
-                <div className="butt_lang">
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    style={{ backgroundColor: "white" }}
-                  >
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <LanguageSelector className="mobile" selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
-                </div>
-              </div>
-              <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul className="navbar-nav d-flex align-items-center">
-                  <NavItem to="/" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_Home')} />
-                  <NavItem to="/about" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_Abtme')} />
-                  <NavItem to="/projects" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_proj')} />
-                  <NavItem to="/contact" activePage={activePage} handleNavClick={handleNavClick} label={t('Nav_contact')} />
-                  <li>
-                    <LanguageSelector selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
-                  </li>
-                </ul>
-              </div>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+          <div className="firstpart">
+            <Link className="navbar-brand" to="/" onClick={() => handleNavClick('/')}>
+              <img src={teodor_logo} alt='Logo' className='img-fluid' />
+            </Link>
+            <Link className="navbar-phone" to="/" onClick={() => handleNavClick('/')}>
+              <img src={teodor_logo_mobile} alt='Logo' className='img-fluid' />
+            </Link>
+            <div className="butt_lang">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style={{ backgroundColor: "white" }}
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <LanguageSelector className="mobile" selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
             </div>
-          </nav>
+          </div>
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul className="navbar-nav d-flex align-items-end">
+              {['/', '/about', '/projects', '/contact'].map((path) => (
+                <NavItem 
+                  key={path}
+                  to={path}
+                  activePage={activePage}
+                  handleNavClick={handleNavClick}
+                  label={t(`Nav_${path.slice(1)}`)}
+                />
+              ))}
+              <li>
+                <LanguageSelector selectedLanguage={selectedLanguage} onChangeLanguage={handleLanguageChange} />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };

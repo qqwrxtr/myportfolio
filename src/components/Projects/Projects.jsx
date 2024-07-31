@@ -34,7 +34,7 @@ const Projects = () => {
             srcsite: "https://neon-smile-en.vercel.app/",
             img: img1,
             video: neonsmilemp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/BombBlastEN",
@@ -43,7 +43,7 @@ const Projects = () => {
             srcsite: "https://bomb-blast-en.vercel.app/",
             img: img2,
             video: bombblastmp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/ChestHunt",
@@ -52,7 +52,7 @@ const Projects = () => {
             srcsite: "https://chest-hunt.vercel.app/",
             img: img3,
             video: chesthuntmp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/ventilator",
@@ -61,7 +61,7 @@ const Projects = () => {
             srcsite: "https://ventilator-nine.vercel.app/",
             img: img4,
             video: ventilatormp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/helicopter_helicopter",
@@ -70,7 +70,7 @@ const Projects = () => {
             srcsite: "https://helicopter-helicopter.vercel.app/",
             img: img5,
             video: helicoptermp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/Pegasus_Team",
@@ -79,7 +79,7 @@ const Projects = () => {
             srcsite: "https://pegasus-team.vercel.app/",
             img: img6,
             video: pegasusmp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/X-O",
@@ -88,7 +88,7 @@ const Projects = () => {
             srcsite: "https://x-o-mocha-ten.vercel.app/",
             img: img7,
             video: xomp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/StudiuIndivitual2",
@@ -97,7 +97,7 @@ const Projects = () => {
             srcsite: "https://studiu-indivitual2.vercel.app/youtube.html",
             img: img8,
             video: youtubemp4,
-            useVideo: true
+            useVideo: true,
         },
         {
             srcgit: "https://github.com/qqwrxtr/JoomProject",
@@ -106,8 +106,8 @@ const Projects = () => {
             srcsite: "https://joom-project.vercel.app/joom.html",
             img: img9,
             video: joommp4,
-            useVideo: true
-        }
+            useVideo: true,
+        },
     ];
 
     return (
@@ -116,7 +116,7 @@ const Projects = () => {
                 <div className="col-12">
                     <h2>{t("Projects")}</h2>
                 </div>
-                <div className="col-12">
+                <div className="col-12 center_mic">
                     <p>*{t("Projects_description")}</p>
                 </div>
             </div>
@@ -129,6 +129,6 @@ const Projects = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Projects;

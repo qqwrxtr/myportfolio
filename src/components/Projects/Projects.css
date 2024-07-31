@@ -1,14 +1,46 @@
-.title_proiecte h1{
+.title_proiecte {
+    text-align: start;
+}
+
+.title_proiecte h2 {
     margin-bottom: 30px !important;
 }
 
-.row-gap{
+.row-gap {
     row-gap: 25px;
 }
 
-@media only screen and (max-width:1000px) {
-    .title_proiecte h1{
+.project {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title_proiecte h2, .center_mic {
         text-align: center;
+    }
+
+    .project {
+        min-height: 300px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .project {
+        min-height: 280px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .project {
+        min-height: 250px;
+    }
+}

@@ -1,7 +1,7 @@
 {
-    "Nav_Home" : "Главная",
-    "Nav_Abtme" : "Про меня",
-    "Nav_proj" : "Проекты",
+    "Nav_" : "Главная",
+    "Nav_about" : "Про меня",
+    "Nav_projects" : "Проекты",
     "Nav_contact" : "Контакты",
     "Home_title" : "Привет, я Teodor Ghirba",
     "Home_undertitle" : "Я FullStack веб-разработчик, я закончил Колледж информатики, я студент Технического университета Молдовы и работаю веб-разработчиком в VenMedia SRL",

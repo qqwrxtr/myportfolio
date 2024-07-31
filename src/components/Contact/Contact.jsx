@@ -58,7 +58,7 @@ const Contact = () => {
                     <p className="text-center">{t("Contact_text")}</p>
                 </div>
             </div>
-            <div className="row d-flex justify-content-center align-items-center row-gap-3">
+            <div className="row d-flex justify-content-center align-items-center row-gap-3 row-col-min">
                 {contactLinksData.slice(0, 4).map(({ link, platicon, username }, index) => (
                     <div key={index} className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex justify-content-center align-items-center">
                         <ContactLinks 

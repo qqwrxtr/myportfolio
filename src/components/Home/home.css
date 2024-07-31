@@ -13,9 +13,11 @@
     font-size: 1.2rem;
 }
 
-.photo{
+.photo {
     display: flex;
     justify-content: end;
+    width: 373px;
+    height: auto;
 }
 
 .photo img{
@@ -86,6 +88,7 @@
     }
     .photo{
         margin-top: 30px;
+        margin-left: 325px;
     }
     .photo img{
         max-width: 272px;
@@ -93,6 +96,7 @@
         object-fit: contain;
         z-index: 1;
         margin-bottom: 30px;
+        
     }
 }
 
@@ -102,7 +106,7 @@
         margin-bottom: -400px;
     }
     .photo{
-        margin-left: 40px;
+        margin-left: 200px;
     }
     .title{
         font-size: 2.4rem;
@@ -122,12 +126,10 @@
 
 @media only screen and (max-width:520px) {
     .photo{
-        max-width: 240px;
-        width: 100%;
-        object-fit: contain;
-        z-index: 1;
-        margin-top: 100px;
-        margin-left: 250px;
+        display: none;
+    }
+    .w-100{
+        margin-top: -500px;
     }
     .title{
         font-size: 2.3rem;
@@ -138,6 +140,11 @@
     }
     .home{
         min-height: 50vh;
+        text-align: center;
+    }
+
+    .w-100{
+        margin-top: -500px;
     }
 }
 

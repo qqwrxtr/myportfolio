@@ -62,7 +62,7 @@ header {
   flex-grow: 1;
   overflow: hidden;
   padding-top: 30px;
-  
+  min-height: 80vh;
 }
 
 footer {

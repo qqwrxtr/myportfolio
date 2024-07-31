@@ -11,16 +11,19 @@ const PhotoOverflow = ({ src, onClose }) => {
     return (
         <div className="overflow">
             <div className="overflow-inner">
-                <button className="close-button" onClick={onClose}>X</button>
+                <button className="close-button" onClick={onClose} aria-label="Close">
+                    X
+                </button>
                 {!loaded && <div className="placeholder">Loading...</div>}
                 <video
                     src={src}
-                    className={`video-fluid scale ${loaded ? 'loaded' : ''}`}
+                    className={`video-fluid ${loaded ? 'loaded' : ''}`}
                     autoPlay
                     preload="auto"
                     loop
                     muted
                     onLoadedData={handleLoadedData}
+                    controls={loaded}
                 />
             </div>
         </div>

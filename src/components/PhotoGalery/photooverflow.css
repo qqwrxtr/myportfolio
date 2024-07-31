@@ -13,14 +13,19 @@
 
 .overflow-inner {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
-
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .video-fluid {
     width: 100%;
     height: auto;
+    object-fit: contain;
+    display: none;
+}
+
+.video-fluid.loaded {
+    display: block;
 }
 
 .close-button {
@@ -33,17 +38,13 @@
     font-size: 26px;
     cursor: pointer;
     z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--scrollbar);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .placeholder {
@@ -53,6 +54,6 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-color:transparent;
+    background-color: transparent;
     margin-top: 1.2rem;
 }
