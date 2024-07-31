@@ -16,7 +16,7 @@ const ContactLinks = ({ link, platicon, username, width }) => {
     }, [handleResize]);
 
     return (
-        <a href={link}>
+        <a href={link} target="_blank" rel="noreferrer">
             <div 
                 className="btn-gradient width" 
                 style={{  

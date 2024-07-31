@@ -9,7 +9,7 @@ const ToProjects = (href) => {
             <div id="circle">
             </div>
             <div>
-                <Link to={href.src}>{href.txt} <img src={nexticon} alt="" /> </Link>
+                <Link to={href.src}>{href.txt} <img src={nexticon} alt="" target="_blank" rel="noreferrer" /> </Link>
             </div>
         </div>
         

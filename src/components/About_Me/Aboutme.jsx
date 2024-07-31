@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import Button from "../buttons/buttontogit/ButtonToProjects";
 import ToProjects from "../buttons/toprojects/Toprojects";
 
-
 const AboutMe = () => {
     const { t } = useTranslation();
 
