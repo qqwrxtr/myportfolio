@@ -6,8 +6,6 @@ import About from './components/About_Me/Aboutme';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 const App = () => {
@@ -29,8 +27,6 @@ const App = () => {
           <Footer />
         </footer>
       </Router>
-      <SpeedInsights />
-      <Analytics />
     </div>
   );
 };
