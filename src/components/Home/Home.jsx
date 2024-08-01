@@ -41,7 +41,7 @@ const Home = () => {
                         alt={t("Home_Image_Alt")}
                         className="img-fluid" 
                         loading="lazy" 
-                        width="600"
+                        width="550"
                         height="auto"
                     />
                 </div>
