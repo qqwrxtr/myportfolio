@@ -3,7 +3,7 @@ import "./home.css";
 import { useTranslation } from 'react-i18next';
 import ContactMeButton from "../buttons/contactme/ContactMe";
 import CV from "../buttons/Cv/Cv.jsx";
-import me from "../../assets/img/image.png";
+import me from "../../assets/img/123321-removebg.png";
 import ToProjectsButton from "../buttons/toinsideProjects/ToProjects.jsx";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
                             {t("Home_undertitle")}
                         </p>
                     </div>
-                    <div className="flex d-flex da">
+                    <div className="flex da">
                         <div className="contact_me">
                             <ContactMeButton />
                         </div>
@@ -41,7 +41,7 @@ const Home = () => {
                         alt={t("Home_Image_Alt")}
                         className="img-fluid" 
                         loading="lazy" 
-                        width="373"
+                        width="600"
                         height="auto"
                     />
                 </div>
