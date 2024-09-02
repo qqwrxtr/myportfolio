@@ -44,6 +44,6 @@
   }
   
   #button-3:hover a {
-    color: #2D3142;
+    color: var(--buttonhover);
   }
   

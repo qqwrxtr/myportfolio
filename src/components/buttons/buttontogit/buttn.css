@@ -52,7 +52,7 @@ a{
   }
   
   #button-3:hover a {
-    color: #2D3142;
+    color: var(--buttonhover);
   }
   
   @media only screen and (max-width:768px) {

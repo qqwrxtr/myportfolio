@@ -13,9 +13,9 @@ import "./contact.css";
 
 const contactLinksData = [
     {
-        link: "https://t.me/WhuZis",
+        link: "https://t.me/qqwrxtr",
         platicon: telegramicon,
-        username: "@WhuZis",
+        username: "@qqwrxtr",
     },
     {
         link: "https://www.instagram.com/qqwrxtr/",

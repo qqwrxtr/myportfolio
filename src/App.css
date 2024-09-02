@@ -21,6 +21,7 @@
   --bgcolorbody: #11071F;
   --navfooter: #1A0B2E;
   --scrollbar: #55377c;
+  --buttonhover : #4d0f9e;
 }
 
 html, body {
@@ -68,4 +69,16 @@ header {
 footer {
   flex-shrink: 0;
   background-color: var(--navfooter);
+}
+
+#circle {
+  background: var(--buttonhover);
+}
+
+#button-3:hover a {
+  color: white;
+}
+
+#button-4:hover a {
+  color: white;
 }
