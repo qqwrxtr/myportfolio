@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
-import i18n from "./../../i18n/index.jsx";
+import i18n from "../../i18n/index.jsx"; 
 import "../navbar/navbar.css";
 
 const LanguageSelector = ({ className }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language || "en");
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.resolvedLanguage || "en");
 
   const handleLanguageChange = useCallback(
     (e) => {
@@ -15,11 +15,14 @@ const LanguageSelector = ({ className }) => {
   );
 
   useEffect(() => {
-    const changeHandler = (lng) => setSelectedLanguage(lng);
-    i18n.on("languageChanged", changeHandler);
+    const syncLanguage = () => setSelectedLanguage(i18n.resolvedLanguage || "en");
+
+    syncLanguage();
+
+    i18n.on("languageChanged", syncLanguage);
 
     return () => {
-      i18n.off("languageChanged", changeHandler);
+      i18n.off("languageChanged", syncLanguage);
     };
   }, []);
 
