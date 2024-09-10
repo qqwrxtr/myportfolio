@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import i18n from "../path/to/i18n";
+import i18n from "./../../i18n/index.jsx";
 import "../navbar/navbar.css";
 
 const LanguageSelector = ({ className }) => {
